@@ -1,0 +1,300 @@
+/* ===== BLOC 1 — HEADER ===== */
+.header {
+  padding: 80px 40px 60px;
+  background: var(--white);
+}
+
+.headerInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  max-width: 600px;
+}
+
+/* ===== BLOC 2 — AGENCES ===== */
+.agences {
+  padding: 0 40px 100px;
+  background: var(--white);
+}
+
+.agencesInner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.agencesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.agenceCard {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.agenceTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.agenceAddress {
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 16px;
+}
+
+.agenceInfo {
+  margin-bottom: 24px;
+}
+
+.agenceInfo p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.agenceInfo strong {
+  color: var(--black);
+}
+
+.agenceActions {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.agenceLink {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.agenceLink:hover {
+  opacity: 0.7;
+}
+
+/* ===== BLOC 3 — FORMULAIRE ===== */
+.formulaire {
+  background: var(--surface);
+  padding: 120px 40px;
+}
+
+.formulaireInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.formulaireGrid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 60px;
+  align-items: start;
+}
+
+.formulaireTitle {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.formulaireText {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  margin-bottom: 24px;
+}
+
+.formulaireSeparator {
+  width: 40px;
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 24px;
+}
+
+.formulairePhones {
+  margin-bottom: 24px;
+}
+
+.formulairePhones p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.formulairePhones strong {
+  color: var(--black);
+}
+
+.formulaireIntersite {
+  font-size: 14px;
+  color: var(--mid-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.formulaireIntersite:hover {
+  color: var(--black);
+}
+
+/* Form input overrides */
+.formulaireRight input,
+.formulaireRight select,
+.formulaireRight textarea {
+  background: var(--white) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  padding: 14px 16px !important;
+}
+
+/* ===== BLOC 4 — CARTE BRETAGNE ===== */
+.carte {
+  padding: 80px 40px;
+  background: var(--white);
+}
+
+.carteInner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.carteLegend {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--mid-gray);
+  margin-top: 16px;
+}
+
+.carteButtons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* ===== BLOC 5 — MAILLAGE RAPIDE ===== */
+.maillage {
+  background: var(--surface);
+  padding: 60px 40px;
+}
+
+.maillageInner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.maillageTitle {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.maillageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.maillageColTitle {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--light-gray);
+  margin-bottom: 16px;
+}
+
+.maillageList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.maillageList li {
+  margin-bottom: 10px;
+}
+
+.maillageList a {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.maillageList a:hover {
+  color: var(--black);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 60px 20px 40px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .agences {
+    padding: 0 20px 60px;
+  }
+
+  .agencesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .agenceCard {
+    padding: 28px;
+  }
+
+  .formulaire {
+    padding: 80px 20px;
+  }
+
+  .formulaireGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .carte {
+    padding: 60px 20px;
+  }
+
+  .carteButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .maillage {
+    padding: 48px 20px;
+  }
+
+  .maillageGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

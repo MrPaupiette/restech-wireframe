@@ -1,0 +1,236 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroBg > div {
+  border-radius: 0;
+  height: 100% !important;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  padding: 0 40px;
+  padding-top: 40px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== FILTERS ===== */
+.filtersSection {
+  padding: 40px 0;
+  background: var(--white);
+}
+
+.filterGroups {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filterDivider {
+  width: 1px;
+  height: 28px;
+  background: var(--border);
+}
+
+.resultCount {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: var(--mid-gray);
+  font-weight: 500;
+}
+
+/* ===== OFFRES LIST ===== */
+.offresList {
+  background: var(--white);
+  padding-bottom: 80px;
+}
+
+.offresInner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--mid-gray);
+  padding: 60px 0;
+}
+
+/* ===== CANDIDATURE SPONTANÉE ===== */
+.candidature {
+  background: var(--surface);
+  padding: 100px 0;
+}
+
+.candidatureGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 60px;
+  align-items: start;
+}
+
+.candidatureTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.candidatureText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 24px;
+}
+
+.candidatureSep {
+  width: 60px;
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 24px;
+}
+
+.candidaturePhone {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--mid-gray);
+}
+
+.candidatureCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.candidatureCardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.candidatureCardText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+  margin-bottom: 24px;
+}
+
+.candidatureCardSmall {
+  font-size: 0.8rem;
+  color: var(--mid-gray);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.intersiteLink {
+  font-size: 14px;
+  color: var(--mid-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.intersiteLink:hover {
+  color: var(--black);
+}
+
+/* ===== LIEN MÉTIERS ===== */
+.liensMetiers {
+  background: var(--white);
+  padding: 60px 0;
+}
+
+.liensMetiersInner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.liensMetiersText {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  margin-bottom: 24px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .candidatureGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .filterDivider {
+    display: none;
+  }
+
+  .offresInner {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  .heroContent {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+
+  .candidatureCard {
+    padding: 24px;
+  }
+}

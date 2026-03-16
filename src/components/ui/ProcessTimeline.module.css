@@ -1,0 +1,49 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--black);
+  flex-shrink: 0;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  min-height: 40px;
+}
+
+.content {
+  padding-bottom: 32px;
+}
+
+.stepTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: var(--mid-gray);
+  line-height: 1.5;
+}

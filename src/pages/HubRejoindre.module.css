@@ -1,0 +1,322 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroBg > div {
+  border-radius: 0;
+  height: 100% !important;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  padding: 0 40px;
+  padding-top: 40px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== POURQUOI ===== */
+.pourquoi {
+  padding: 120px 0;
+}
+
+.argsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.argItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.argTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.argText {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+}
+
+/* ===== TÉMOIGNAGE ===== */
+.temoignage {
+  background: var(--surface);
+  padding: 100px 0;
+}
+
+.temoignageGrid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 60px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.guillemet {
+  font-family: var(--font-serif);
+  font-size: 6rem;
+  color: var(--border);
+  line-height: 0.5;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.citation {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.citationAuthor {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.citationRole {
+  font-size: 0.85rem;
+  color: var(--mid-gray);
+  margin-top: 4px;
+}
+
+/* ===== MÉTIERS ===== */
+.metiers {
+  padding: 120px 0;
+}
+
+.metiersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.metierBody {
+  padding: 20px;
+}
+
+.metierTitle {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.metierText {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+}
+
+.metiersLinks {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.linkArrow {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.linkArrow:hover {
+  opacity: 0.7;
+}
+
+.intersiteLink {
+  font-size: 14px;
+  color: var(--mid-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.intersiteLink:hover {
+  color: var(--black);
+}
+
+/* ===== CHIFFRES ===== */
+.chiffres {
+  background: var(--surface);
+  padding: 80px 0;
+}
+
+.countersInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counterSep {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+}
+
+/* ===== OFFRES ===== */
+.offres {
+  padding: 120px 0;
+}
+
+.offresList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.offresLinks {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: var(--black);
+  padding: 100px 0;
+  color: var(--white);
+}
+
+.ctaTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.ctaSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.ctaPrimary {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+.ctaIntersite {
+  margin-top: 24px;
+}
+
+.ctaIntersiteLink {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.ctaIntersiteLink:hover {
+  color: var(--white);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .argsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .temoignageGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .metiersGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .countersInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .counterSep {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroContent {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+
+  .argsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .metiersGrid {
+    grid-template-columns: 1fr;
+  }
+}

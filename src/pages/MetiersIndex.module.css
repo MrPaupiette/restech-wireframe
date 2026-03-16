@@ -1,0 +1,145 @@
+.hero {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.heroBg { position: absolute; inset: 0; z-index: 0; }
+.heroBg > div { border-radius: 0; height: 100% !important; }
+.heroOverlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 1; }
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  padding: 0 40px;
+  padding-top: 40px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro { padding: 80px 40px; }
+
+.introInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+}
+
+.grille {
+  background: var(--surface);
+  padding: 120px 0;
+}
+
+.metiersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.groupe { padding: 60px 40px; }
+
+.groupeInner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.groupeText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.groupeLink {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.groupeLink:hover { opacity: 0.7; }
+
+.cta {
+  background: var(--black);
+  padding: 80px 0;
+  color: var(--white);
+}
+
+.ctaTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.ctaSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+.ctaSecondary {
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+.ctaSecondary:hover {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+@media (max-width: 768px) {
+  .heroTitle { font-size: 2rem; }
+  .metiersGrid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 375px) {
+  .heroTitle { font-size: 1.7rem; }
+  .heroContent { padding: 0 20px; padding-top: 40px; }
+  .metiersGrid { grid-template-columns: 1fr; }
+}

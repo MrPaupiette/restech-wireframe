@@ -1,0 +1,423 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroBg > div {
+  border-radius: 0;
+  height: 100% !important;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  padding: 0 40px;
+}
+
+.heroLabel {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroCtaPrimary {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+.heroCtaPrimary:hover {
+  opacity: 0.85;
+}
+
+.heroCtaSecondary {
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+.heroCtaSecondary:hover {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  padding: 100px 40px;
+}
+
+.introInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 24px;
+}
+
+.introLink {
+  font-size: 15px;
+  color: var(--mid-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.introLink:hover {
+  color: var(--black);
+}
+
+/* ===== EXPERTISES ===== */
+.expertises {
+  background: var(--surface);
+  padding: 120px 0;
+}
+
+.expertisesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardBody {
+  padding: 32px;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+  margin-bottom: 16px;
+}
+
+.cardArrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* ===== COUNTERS ===== */
+.counters {
+  padding: 100px 0;
+}
+
+.countersInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counterSep {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+}
+
+/* ===== TERRITOIRES ===== */
+.territoires {
+  background: var(--surface);
+  padding: 120px 0;
+}
+
+.territoiresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* ===== RÉALISATIONS ===== */
+.realisations {
+  padding: 120px 0;
+}
+
+.realisationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--mid-gray);
+  background: var(--surface);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.cardTitleSmall {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.realisationsCta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.linkArrow {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.linkArrow:hover {
+  opacity: 0.7;
+}
+
+/* ===== RÉFÉRENCES ===== */
+.references {
+  background: var(--surface);
+  padding: 100px 0;
+}
+
+.referencesRow {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.referenceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 320px;
+  gap: 12px;
+}
+
+.referenceName {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.referenceText {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+}
+
+/* ===== NOUS REJOINDRE ===== */
+.rejoindre {
+  background: var(--black);
+  padding: 120px 0;
+  color: var(--white);
+}
+
+.rejoindreGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 60px;
+  align-items: center;
+}
+
+.rejoindreText h2 {
+  color: var(--white);
+}
+
+.rejoindreP {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 32px;
+}
+
+.rejoindreCtas {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.rejoindreCtaPrimary {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+.rejoindreCtaSecondary {
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+.rejoindreCtaSecondary:hover {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+.rejoindreIntersite {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.rejoindreIntersite:hover {
+  color: var(--white);
+}
+
+/* ===== SEO BLOCK ===== */
+.seoBlock {
+  padding: 80px 40px;
+}
+
+.seoInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seoTitle {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--light-gray);
+  margin-bottom: 24px;
+}
+
+.seoText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+.seoText a {
+  color: var(--dark-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.seoText a:hover {
+  color: var(--black);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .intro {
+    padding: 80px 20px;
+  }
+
+  .expertisesGrid,
+  .territoiresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .realisationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .countersInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .counterSep {
+    display: none;
+  }
+
+  .rejoindreGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .referencesRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroContent {
+    padding: 0 20px;
+  }
+}

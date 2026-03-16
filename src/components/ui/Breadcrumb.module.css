@@ -1,0 +1,45 @@
+.breadcrumb {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.light {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.light .link {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.light .sep {
+  margin: 0 8px;
+  color: var(--white);
+}
+
+.light .current {
+  color: var(--white);
+}
+
+.dark {
+  color: var(--mid-gray);
+}
+
+.dark .link {
+  color: var(--mid-gray);
+  text-decoration: underline;
+}
+
+.dark .link:hover {
+  color: var(--black);
+}
+
+.dark .sep {
+  margin: 0 8px;
+  color: var(--light-gray);
+}
+
+.dark .current {
+  color: var(--dark-gray);
+}

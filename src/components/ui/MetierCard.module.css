@@ -1,0 +1,58 @@
+.body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--mid-gray);
+  background: var(--surface);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.kw {
+  display: block;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--light-gray);
+  margin-top: 12px;
+}

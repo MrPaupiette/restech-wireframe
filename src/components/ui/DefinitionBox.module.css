@@ -1,0 +1,10 @@
+.box {
+  background: var(--surface);
+  border-left: 4px solid var(--black);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 32px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 32px;
+}

@@ -1,0 +1,380 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroBg > div {
+  border-radius: 0;
+  height: 100% !important;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white);
+  max-width: 850px;
+  padding: 0 40px;
+  padding-top: 40px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ===== SECTIONS ===== */
+.sectionAlt {
+  background: var(--surface);
+  padding: 100px 0;
+}
+
+.sectionWhite {
+  padding: 100px 0;
+}
+
+/* ===== GRIDS ===== */
+.gridTextImg {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 60px;
+  align-items: center;
+}
+
+.gridText {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridImg {}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.h2Center {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.bodyText {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  margin-bottom: 20px;
+}
+
+.addressBlock {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  padding: 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  margin-top: 8px;
+}
+
+/* ===== GRID 3 COL ===== */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cardBody {
+  padding: 24px;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.cardTitleSmall {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.cardText {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--mid-gray);
+  margin-bottom: 12px;
+}
+
+.cardArrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.cardArrow:hover {
+  opacity: 0.7;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--mid-gray);
+  background: var(--surface);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.chantiersLink {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===== CLIENTS ===== */
+.clientsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.clientsIntro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.clientsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.clientItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.clientName {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.clientDesc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--mid-gray);
+}
+
+.linkArrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.linkArrow:hover {
+  opacity: 0.7;
+}
+
+/* ===== VILLES ===== */
+.villesContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.villesIntro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  margin-bottom: 32px;
+}
+
+.villesTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.villeTag {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--surface);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.villeTagBold {
+  font-weight: 600;
+  background: var(--surface-alt);
+  color: var(--black);
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: var(--black);
+  padding: 80px 0;
+  color: var(--white);
+}
+
+.ctaTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.ctaSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+.ctaSecondary {
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+.ctaSecondary:hover {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+/* ===== SEO ===== */
+.seoBlock {
+  padding: 60px 40px;
+}
+
+.seoInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seoTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--light-gray);
+  margin-bottom: 24px;
+}
+
+.seoText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+.seoText a {
+  color: var(--dark-gray);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.seoText a:hover {
+  color: var(--black);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .gridTextImg {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .clientsGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  .heroContent {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+}

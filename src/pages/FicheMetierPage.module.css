@@ -1,0 +1,82 @@
+.hero { position: relative; height: 350px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-top: -80px; }
+.heroBg { position: absolute; inset: 0; z-index: 0; }
+.heroBg > div { border-radius: 0; height: 100% !important; }
+.heroOverlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 1; }
+.heroContent { position: relative; z-index: 2; text-align: center; color: var(--white); max-width: 800px; padding: 0 40px; padding-top: 40px; }
+.heroTitle { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 400; line-height: 1.15; margin-bottom: 16px; }
+.heroSubtitle { font-size: 1.1rem; line-height: 1.6; opacity: 0.75; max-width: 600px; margin: 0 auto; }
+
+.resume { padding: 80px 0; }
+.resumeGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.resumeItem { background: var(--surface); border-radius: var(--radius); padding: 24px; text-align: center; display: flex; flex-direction: column; gap: 8px; }
+.resumeIcon { font-size: 1.5rem; }
+.resumeLabel { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--light-gray); font-weight: 600; }
+.resumeValue { font-size: 0.95rem; color: var(--dark-gray); font-weight: 500; }
+
+.missions { padding: 100px 0; }
+.missionsGrid { display: grid; grid-template-columns: 55% 45%; gap: 60px; align-items: center; }
+.missionsText { display: flex; flex-direction: column; }
+
+.h2 { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; margin-bottom: 20px; line-height: 1.2; }
+.h2Center { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; margin-bottom: 32px; text-align: center; }
+.h3 { font-family: var(--font-sans); font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
+.bodyText { font-size: 1rem; line-height: 1.7; color: var(--mid-gray); margin-bottom: 20px; }
+
+.bulletList { list-style: none; }
+.bulletList li { font-size: 0.9rem; color: var(--mid-gray); padding: 6px 0 6px 16px; position: relative; }
+.bulletList li::before { content: '—'; position: absolute; left: 0; color: var(--light-gray); }
+
+.competences { background: var(--surface); padding: 100px 0; }
+.competencesInner { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+.compGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.checkList { list-style: none; }
+.checkList li { font-size: 0.9rem; color: var(--mid-gray); padding: 8px 0 8px 20px; position: relative; line-height: 1.5; }
+.checkList li::before { content: '✓'; position: absolute; left: 0; color: var(--dark-gray); font-weight: 600; }
+
+.salaireSection { padding: 100px 0; }
+.salaireGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.salaireCards { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+.salaireCard { background: var(--surface); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+.salaireNiveau { font-size: 0.9rem; font-weight: 600; color: var(--dark-gray); }
+.salaireFourchette { font-size: 0.9rem; color: var(--mid-gray); }
+.salaireNote { font-size: 13px; color: var(--light-gray); font-style: italic; line-height: 1.5; }
+.evolutionNote { font-size: 13px; color: var(--light-gray); font-style: italic; margin-top: 16px; line-height: 1.5; }
+
+.temoignage { background: var(--surface); padding: 80px 0; }
+.temoignageInner { max-width: 800px; margin: 0 auto; padding: 0 40px; text-align: center; }
+.guillemet { font-family: var(--font-serif); font-size: 6rem; color: var(--border); line-height: 0.5; display: block; margin-bottom: 16px; }
+.citation { font-size: 1.1rem; line-height: 1.7; color: var(--dark-gray); font-style: italic; margin-bottom: 24px; }
+.citationAuthor { font-size: 1rem; font-weight: 600; color: var(--black); }
+.citationRole { font-size: 0.85rem; color: var(--mid-gray); margin-top: 4px; }
+
+.offresLiees { padding: 100px 0; }
+.offresList { max-width: 700px; margin: 0 auto; }
+.noOffres { text-align: center; font-size: 1rem; color: var(--mid-gray); line-height: 1.6; padding: 20px 0; }
+.offresCtaRow { text-align: center; margin-top: 32px; }
+
+.autresMetiers { background: var(--surface); padding: 80px 0; }
+.autresGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.cta { background: var(--black); padding: 80px 0; color: var(--white); }
+.ctaTitle { font-family: var(--font-serif); font-size: 2rem; font-weight: 400; margin-bottom: 16px; color: var(--white); }
+.ctaSubtitle { font-size: 1.05rem; line-height: 1.6; opacity: 0.7; max-width: 600px; margin: 0 auto 32px; }
+.ctaButtons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.ctaPrimary { background: var(--white) !important; color: var(--black) !important; border-color: var(--white) !important; }
+.ctaSecondary { border-color: var(--white) !important; color: var(--white) !important; }
+.ctaSecondary:hover { background: var(--white) !important; color: var(--black) !important; }
+.ctaIntersite { margin-top: 24px; }
+.ctaIntersiteLink { font-size: 14px; color: rgba(255,255,255,0.5); text-decoration: underline; transition: color 0.2s; }
+.ctaIntersiteLink:hover { color: var(--white); }
+
+@media (max-width: 768px) {
+  .heroTitle { font-size: 2rem; }
+  .resumeGrid { grid-template-columns: 1fr 1fr; }
+  .missionsGrid, .salaireGrid, .compGrid { grid-template-columns: 1fr; }
+  .autresGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 375px) {
+  .heroTitle { font-size: 1.7rem; }
+  .heroContent { padding: 0 20px; padding-top: 40px; }
+  .resumeGrid { grid-template-columns: 1fr; }
+}

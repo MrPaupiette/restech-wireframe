@@ -1,0 +1,35 @@
+.bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--surface);
+  color: var(--dark-gray);
+  border: 1px solid var(--border);
+}
+
+.pill:hover {
+  background: var(--surface-alt);
+}
+
+.active {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.active:hover {
+  background: var(--black);
+  opacity: 0.9;
+}
