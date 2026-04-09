@@ -5,8 +5,9 @@ const columns = [
   {
     title: 'NOS EXPERTISES',
     links: [
-      { label: 'Réseaux électriques & Éclairage', href: '/expertises/reseaux-electriques-eclairage' },
-      { label: 'Fibre optique & Maintenance', href: '/expertises/fibre-optique-maintenance' },
+      { label: 'VRD & Viabilisation', href: '/expertises/vrd-viabilisation' },
+      { label: 'Éclairage public', href: '/expertises/eclairage-public' },
+      { label: "Réseaux d'énergie", href: '/expertises/reseaux-energie' },
     ],
   },
   {
@@ -25,9 +26,11 @@ const columns = [
     ],
   },
   {
-    title: 'RESSOURCES TECHNIQUES',
+    title: 'RÉSEAUX TECHNIQUES',
     links: [
-      { label: 'Maintenance fibre optique', href: '/ressources/maintenance-fibre-optique' },
+      { label: 'Réseau HTA', href: '/ressources/reseau-hta' },
+      { label: 'Poste HTA-BT', href: '/ressources/poste-hta-bt' },
+      { label: 'Éclairage public', href: '/ressources/eclairage-public' },
     ],
   },
 ];
@@ -98,7 +101,7 @@ export default function Footer() {
             <Link to="/contact" className={styles.link}>Contact</Link>
           </p>
           <p className={styles.seo}>
-            Réseaux électriques, éclairage public, fibre optique — Morbihan & Finistère
+            VRD, éclairage public, réseaux d'énergie — Morbihan & Finistère
           </p>
         </div>
       </div>

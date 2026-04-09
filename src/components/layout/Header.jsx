@@ -7,8 +7,9 @@ const navItems = [
     label: 'Nos expertises',
     href: '/expertises',
     submenu: [
-      { label: 'Réseaux électriques & Éclairage', href: '/expertises/reseaux-electriques-eclairage' },
-      { label: 'Fibre optique & Maintenance', href: '/expertises/fibre-optique-maintenance' },
+      { label: 'VRD & Viabilisation', href: '/expertises/vrd-viabilisation' },
+      { label: 'Éclairage public', href: '/expertises/eclairage-public' },
+      { label: "Réseaux d'énergie", href: '/expertises/reseaux-energie' },
     ],
   },
   {

@@ -64,7 +64,7 @@ export default function HomePage() {
             Filiale du Groupe Synelis
           </motion.span>
           <motion.h1 className={styles.heroTitle} variants={fadeUp} transition={{ duration: 0.6 }}>
-            Réseaux électriques, éclairage public et fibre optique en Bretagne
+            VRD, éclairage public et réseaux d'énergie en Bretagne
           </motion.h1>
           <motion.p className={styles.heroSubtitle} variants={fadeUp} transition={{ duration: 0.6 }}>
             [Phrase d'accroche positionnant Restech comme l'entreprise multi-réseaux de proximité en Morbihan & Finistère — ~40 collaborateurs, 2 agences, parc matériel propre]
@@ -84,7 +84,7 @@ export default function HomePage() {
           </AnimDiv>
           <AnimDiv>
             <p className={styles.introText}>
-              [Texte de présentation ~80 mots — Restech, filiale du Groupe Synelis, intervient depuis plus de 20 ans sur les réseaux électriques, l'éclairage public et la fibre optique en Morbihan et Finistère. Mention des 2 agences (Crac'h, Melgven), du parc matériel propre (nacelles, pelles, camions grue), et du positionnement terrain de proximité. KW : entreprise travaux publics bretagne (50/mois), réseaux électriques, éclairage public, Morbihan, Finistère]
+              [Texte de présentation ~80 mots — Restech, filiale du Groupe Synelis, intervient depuis plus de 20 ans sur le VRD, l'éclairage public et les réseaux d'énergie en Morbihan et Finistère. Mention des 2 agences (Crac'h, Melgven), du parc matériel propre (nacelles, pelles, camions grue), et du positionnement terrain de proximité. KW : entreprise travaux publics bretagne (50/mois), réseaux électriques, éclairage public, Morbihan, Finistère]
             </p>
           </AnimDiv>
           <AnimDiv>
@@ -106,22 +106,22 @@ export default function HomePage() {
           <AnimDiv>
             <SectionTitle
               title="Nos expertises"
-              subtitle="De la conception à la maintenance, nos équipes interviennent sur vos infrastructures d'énergie et de télécommunications."
+              subtitle="De la conception à la maintenance, nos équipes interviennent sur vos infrastructures de VRD, d'éclairage public et d'énergie."
               align="center"
             />
           </AnimDiv>
           <motion.div className={styles.expertisesGrid} variants={stagger}>
             <AnimDiv>
-              <Link to="/expertises/reseaux-electriques-eclairage" className={styles.cardLink}>
+              <Link to="/expertises/vrd-viabilisation" className={styles.cardLink}>
                 <Card>
                   <Placeholder
-                    text="Photo chantier éclairage public — technicien en nacelle travaillant sur un luminaire LED, rue d'un bourg breton en arrière-plan"
+                    text="Photo chantier VRD — tranchée, pose de canalisations et bordures, engins de terrassement, équipe Restech sur un chantier de viabilisation breton"
                     height="280px"
                   />
                   <div className={styles.cardBody}>
-                    <h3 className={styles.cardTitle}>Réseaux électriques & Éclairage public</h3>
+                    <h3 className={styles.cardTitle}>VRD & Viabilisation</h3>
                     <p className={styles.cardText}>
-                      [Branchement, raccordement, enfouissement de réseaux HTA/BT. Installation et rénovation d'éclairage public LED. Interventions Enedis et collectivités en Morbihan & Finistère. — KW : éclairage public (4 400/mois), branchement électrique (1 900/mois), éclairage public led (210/mois)]
+                      [Voirie et réseaux divers, viabilisation de terrains et lotissements en Morbihan & Finistère. Terrassement, pose de canalisations, bordures, voirie, raccordement aux réseaux humides et secs.]
                     </p>
                     <span className={styles.cardArrow}>Découvrir cette expertise →</span>
                   </div>
@@ -129,16 +129,33 @@ export default function HomePage() {
               </Link>
             </AnimDiv>
             <AnimDiv>
-              <Link to="/expertises/fibre-optique-maintenance" className={styles.cardLink}>
+              <Link to="/expertises/eclairage-public" className={styles.cardLink}>
                 <Card>
                   <Placeholder
-                    text="Photo maintenance fibre — technicien avec soudeuse fibre optique, boîtier ouvert, câbles colorés"
+                    text="Photo chantier éclairage public — technicien en nacelle travaillant sur un luminaire LED, rue d'un bourg breton en arrière-plan"
                     height="280px"
                   />
                   <div className={styles.cardBody}>
-                    <h3 className={styles.cardTitle}>Fibre optique & Maintenance</h3>
+                    <h3 className={styles.cardTitle}>Éclairage public</h3>
                     <p className={styles.cardText}>
-                      [Maintenance préventive et curative des réseaux fibre optique en Bretagne. Intervention sur les infrastructures FTTH déployées par les opérateurs. Angle distinctif vs CAUM : maintenance, pas déploiement. — KW : maintenance fibre optique (40/mois)]
+                      [Installation et rénovation d'éclairage public LED, mise en lumière de patrimoine pour les communes du Morbihan et du Finistère. — KW : éclairage public (4 400/mois), éclairage public led (210/mois)]
+                    </p>
+                    <span className={styles.cardArrow}>Découvrir cette expertise →</span>
+                  </div>
+                </Card>
+              </Link>
+            </AnimDiv>
+            <AnimDiv>
+              <Link to="/expertises/reseaux-energie" className={styles.cardLink}>
+                <Card>
+                  <Placeholder
+                    text="Photo chantier réseau électrique — pose de câble HTA en tranchée, technicien Restech, environnement rural breton"
+                    height="280px"
+                  />
+                  <div className={styles.cardBody}>
+                    <h3 className={styles.cardTitle}>Réseaux d'énergie</h3>
+                    <p className={styles.cardText}>
+                      [Branchement, raccordement, enfouissement de réseaux HTA/BT, postes de transformation HTA-BT. Interventions pour Enedis, Morbihan Énergies et collectivités. — KW : branchement électrique (1 900/mois), raccordement réseau électrique (110/mois)]
                     </p>
                     <span className={styles.cardArrow}>Découvrir cette expertise →</span>
                   </div>
@@ -315,7 +332,7 @@ export default function HomePage() {
           >
             <SectionTitle title="Rejoignez une équipe de terrain en Bretagne" />
             <p className={styles.rejoindreP}>
-              [Accroche marque-employeur — Restech recrute des monteurs réseaux électriques, conducteurs de travaux, techniciens fibre, terrassiers. Travail en extérieur, équipe à taille humaine (~40 personnes), ancrage local Morbihan/Finistère. Évolution de carrière au sein du Groupe Synelis. — KW : monteur réseau électrique (110/mois, KD 5), conducteur de travaux bretagne (30/mois, KD 7)]
+              [Accroche marque-employeur — Restech recrute des monteurs réseaux électriques, conducteurs de travaux, terrassiers. Travail en extérieur, équipe à taille humaine (~40 personnes), ancrage local Morbihan/Finistère. Évolution de carrière au sein du Groupe Synelis. — KW : monteur réseau électrique (110/mois, KD 5), conducteur de travaux bretagne (30/mois, KD 7)]
             </p>
             <div className={styles.rejoindreCtas}>
               <Button label="Voir nos offres" href="/nous-rejoindre/offres" variant="primary" className={styles.rejoindreCtaPrimary} />
@@ -351,7 +368,7 @@ export default function HomePage() {
             <p className={styles.seoText}>
               [Texte SEO 150-200 mots — Restech, entreprise de travaux publics en Bretagne et filiale du Groupe Synelis, intervient en Morbihan et Finistère sur les{' '}
               <Link to="/expertises/reseaux-electriques-eclairage">réseaux électriques</Link> aériens et souterrains (branchement électrique, raccordement réseau électrique, réseau électrique souterrain), l'{' '}
-              <Link to="/expertises/reseaux-electriques-eclairage">éclairage public</Link> (installation, rénovation éclairage public, éclairage public LED, mise en lumière patrimoine) et la maintenance fibre optique. Nos clients —{' '}
+              <Link to="/expertises/reseaux-electriques-eclairage">éclairage public</Link> (installation, rénovation éclairage public, éclairage public LED, mise en lumière patrimoine) et les réseaux d'énergie (HTA/BT, postes de transformation HTA-BT). Nos clients —{' '}
               <Link to="/references/enedis">Enedis</Link>,{' '}
               <Link to="/references/morbihan-energies">Morbihan Énergies</Link>, collectivités locales — font appel à notre expertise et à notre parc matériel propre pour leurs projets d'infrastructure dans les communes de Vannes, Lorient, Quimper, Auray, Concarneau. Interventions en{' '}
               <Link to="/territoires/morbihan">Morbihan</Link> et{' '}
