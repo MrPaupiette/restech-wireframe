@@ -29,8 +29,10 @@ const columns = [
     title: 'RÉSEAUX TECHNIQUES',
     links: [
       { label: 'Réseau HTA', href: '/ressources/reseau-hta' },
+      { label: 'Réseau BT', href: '/ressources/reseau-bt' },
       { label: 'Poste HTA-BT', href: '/ressources/poste-hta-bt' },
       { label: 'Éclairage public', href: '/ressources/eclairage-public' },
+      { label: 'Branchements particuliers et pro', href: '/ressources/branchements' },
     ],
   },
 ];

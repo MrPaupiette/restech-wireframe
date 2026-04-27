@@ -37,6 +37,18 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+      <div className={styles.topBar}>
+        <div className={styles.topBarInner}>
+          <a
+            href="https://synelis.fr/nos-engagements"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.topBarLink}
+          >
+            Nos engagements
+          </a>
+        </div>
+      </div>
       <div className={styles.inner}>
         <Link to="/" className={styles.logo}>
           <span className={styles.logoName}>RESTECH</span>
